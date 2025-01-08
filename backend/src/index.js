@@ -20,8 +20,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    credentials: true,
+      origin: ['https://deploy-mern-1whq.vercel.app'], // Update your frontend URL here
+      methods: ['POST', 'GET'], // Allowed HTTP methods
+      credentials: true, // Enable credentials sharing
+    
   })
 );
 
