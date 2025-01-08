@@ -1,4 +1,4 @@
-# ✨Realtime Chat App ✨
+# ✨kinfolk Chat App ✨
 
 Highlights:
 
