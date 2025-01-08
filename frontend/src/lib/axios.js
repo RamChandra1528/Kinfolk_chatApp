@@ -1,6 +1,8 @@
 import axios from "axios";
 
-export const axiosInstance = axios.create({
-  baseURL: import.meta.env.MODE === "development" ? "https://kinfolk-gamma.vercel.app/api" : "/api",
-  withCredentials: true,
+const axiosInstance = axios.create({
+  baseURL: "https://kinfolk-gamma.vercel.app/api", // Replace with your API base URL
+  withCredentials: true, // Ensure CORS and cookies work correctly
 });
+
+export { axiosInstance };
